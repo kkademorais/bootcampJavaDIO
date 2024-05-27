@@ -50,5 +50,39 @@ public class Operadores {
         //Com operador ternário
         System.out.println(a == b ? "Resultado verdadeiro!" : "Resultado falso!");
 
+        System.out.println();
+        int number1 = 22;
+        int number2 = 13;
+        boolean simNao = number1 == number2;
+        if(simNao)
+            System.out.println("Números iguais!!");
+        else
+            System.out.println("Números diferentes, simNao = "+ simNao);
+
+        System.out.println();
+
+        String nomeUm = "Kaike";
+        String nomeDois = "Kaike";
+
+        System.out.println("Utilizando operador de igualdade  = " + (nomeUm == nomeDois));
+        nomeDois = new String("Kaike");
+        System.out.println("Utilizando operador de igualdade depois de declarar New String = " + (nomeUm == nomeDois));
+        System.out.println("Utilizando equals = " + nomeUm.equals(nomeDois));
+
+        System.out.println();
+
+        if((nomeUm == "Kaike") && (number1 == 22)){
+            System.out.println("Verdade!!");
+        }
+        if((nomeUm == "Kaike") || (number1 == 13)){
+            System.out.println("Verdade!!");
+        }
+        if((nomeUm == "KAIKE") && (number1 == 22)){
+            System.out.println("Verdade!!");
+        }
+        else
+            System.out.println("Falso!!");
     }
 }
+
+
