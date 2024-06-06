@@ -18,10 +18,33 @@ public class SmartTV {
     public void desligar(){
         ligada = false;
     }
-    public void aumentarVolume(int volume){
-        volume++;
+    public void aumentarVolume(){
+        if (ligada)
+            volume++;
+        else
+            System.out.println("Tv desligada. Ligue antes para aumentar o volume! \n");
     }
-    public void abaixarVolume(int volume){
-        volume--;
+    public void abaixarVolume(){
+        if (ligada)
+            volume--;
+        else
+            System.out.println("Tv desligada. Ligue antes para diminuir o volume! \n");
     }
+    public void canalSeguinte(){
+        if (ligada)
+            canal++;
+        else
+            System.out.println("Tv desligada. Ligue antes pra mudar de canal! \n");
+    }
+    public void canalAnterior(){
+        if (ligada)
+            canal--;
+        else
+            System.out.println("Tv desligada. Ligue antes pra mudar de canal! \n");
+    }
+    public void mudarCanal(int novoCanal){
+        canal = novoCanal;
+    }
+
+
 }

@@ -7,12 +7,6 @@ public class Usuario {
         System.out.println("Volume inicial = " + smartTV.volume);
         System.out.println();
 
-        /*if(smartTV.ligada) {
-            System.out.printf("A nossa Smart TV está %b no canal %d e no volume %d \n", smartTV.ligada, smartTV.canal, smartTV.volume);
-        }
-        else {
-            System.out.println("Tv está " + smartTV.ligada);
-        }*/
         smartTV.imprimirTV();
 
         smartTV.ligar();
@@ -22,12 +16,31 @@ public class Usuario {
         smartTV.imprimirTV();
         System.out.println();
 
-        smartTV.aumentarVolume(smartTV.volume);
-        smartTV.aumentarVolume(smartTV.volume);
-        smartTV.aumentarVolume(smartTV.volume);
+
+        smartTV.desligar();
 
         System.out.println("Novo status! \n");
         smartTV.imprimirTV();
         System.out.println();
+
+        smartTV.aumentarVolume();
+        smartTV.ligar();
+        smartTV.aumentarVolume();
+        smartTV.aumentarVolume();
+        smartTV.canalSeguinte();
+
+        System.out.println("Novo status! \n");
+
+        smartTV.imprimirTV();
+
+        smartTV.mudarCanal(4);
+        smartTV.abaixarVolume();
+        smartTV.canalAnterior();
+
+        System.out.println();
+        System.out.println("Novo status! \n");
+
+        smartTV.imprimirTV();
+
     }
 }
