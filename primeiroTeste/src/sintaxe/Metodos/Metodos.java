@@ -5,7 +5,7 @@ public class Metodos {
         return n1 + n2;
     }
 
-    public double dividir(int dividendo, int divisor)throws Exception{}
+    //public double dividir(int dividendo, int divisor)throws Exception{}
 
     private  void metodoPrivado(){}
 
@@ -13,7 +13,7 @@ public class Metodos {
         //Por que não enviar um objeto Cliente como parâmetro??
     }
 
-    public void gravarCliente(Cliente cliente){}
+    //public void gravarCliente(Cliente cliente){}
 
     public static void main(String[] args) {
 
